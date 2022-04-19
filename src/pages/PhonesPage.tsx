@@ -11,7 +11,6 @@ type Params = {
 
 export const PhonesPage: React.FC = () => {
   const { brand } = useParams<Params>();
-
   const dispatch = useAppDispatch();
   const phones = useAppSelector((state) => selectByBrand(state, brand));
   const loading = useAppSelector((state) => state.phones.loading);

@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .image {
+    height: 200px;
+  }
+
+  .colors {
+    margin-top: 8px;
+    width: 100%;
+
+    .colorItem {
+      display: inline-block;
+      border: 1px solid rgba(#000, 0.5);
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      margin: 4px;
+    }
+  }
+
+  .chipContainer {
+    width: 100%;
+    margin-top: 8px;
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      border: 1px solid rgba(#000, 0.5);
+      height: 28px;
+      padding: 0 8px;
+      margin: 4px;
+    }
+  }
+
+  .header {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+}

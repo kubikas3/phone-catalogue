@@ -10,7 +10,7 @@ export type Brands = {
   options: BrandOption[];
 };
 
-export interface Phone {
+export type Phone = {
   brand: string;
   displayName: string;
   contentKey: string;
@@ -24,9 +24,9 @@ export interface Phone {
   colorOptions: ColorOption[];
   imgUrl: string;
   link: string;
-}
+};
 
-export interface ColorOption {
+export type ColorOption = {
   name: string;
   hex: string;
-}
+};

@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
   width: 100%;
-  align-items: center;
+  align-items: start;
   justify-items: center;
 
   @media only screen and (max-width: 768px) {

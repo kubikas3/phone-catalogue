@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { addItem, removeItem, selectItems } from "../redux/favoriteSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import { BrandOption } from "../types";
-import styles from "./GridItem.module.scss";
+import styles from "./BrandItem.module.scss";
 
 type BrandItemProps = {
   brand: BrandOption;
@@ -22,9 +22,9 @@ export const BrandItem: React.FC<BrandItemProps> = ({
   };
 
   return (
-    <div className={styles.root}>
-      <Link to={`/phones/${id}`}>
-        <img alt={displayName} src={displayImageUrl} />
+    <div className={styles.container}>
+      <Link className={styles.header} to={`/phones/${id}`}>
+        <img className={styles.image} alt={displayName} src={displayImageUrl} />
         <h3>{displayName}</h3>
         <button onClick={handleFavClick}>
           {favorite ? "Remove from favorites" : "Add to favorites"}
